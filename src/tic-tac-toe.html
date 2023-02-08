@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+    <head> <title> Tic Tac Toe </title> </head>
+    <body>
+        <canvas id="myCanvas" width="600" height="600" margins="20" style="border: 10px solid black; "></canvas>
+
+
+        <script>
+        var c = document.getElementById("myCanvas"); 
+        var ctx = c.getContext("2d"); 
+        ctx.lineWidth=10; 
+        ctx.strokeStyle="pink"; 
+
+        
+        ctx.moveTo(0, 200); //horizontal lines
+            ctx.lineTo(600, 200); 
+            ctx.stroke(); 
+
+            ctx.moveTo(0, 400); 
+            ctx.lineTo(600, 400); //horizontal lines 
+            ctx.stroke(); 
+
+            //makes X
+            ctx.moveTo(200, 0); 
+            ctx.lineTo(200, 600); 
+            ctx.stroke(); 
+
+            ctx.moveTo(600, 400);
+            ctx.lineTo(400, 600);
+            ctx.stroke(); 
+
+            ctx.moveTo(400,400); 
+            ctx.lineTo(600, 600); 
+            ctx.stroke(); 
+
+            ctx.moveTo(200, 200); 
+            ctx.lineTo(400, 400); 
+            ctx.stroke(); 
+
+            ctx.moveTo(400, 0); //vertical lines 
+            ctx.lineTo(400, 600); 
+            ctx.stroke(); 
+
+        </script>
+        <script>
+        ctx.beginPath();
+        ctx.arc(500, 305, 50, 0, 2 * Math.PI); 
+        ctx.strokeStyle="lightblue"
+
+        ctx.beginPath(); //creates circle 
+        ctx.arc(96, 90, 50, 0, 2 * Math.PI); 
+        ctx.stroke(); 
+
+        ctx.beginPath(); 
+        ctx.arc(500, 85, 50, 0, 2 * Math.PI); 
+        ctx.stroke();
+
+
+        </script>
+
+
+
+
+
+
+
+    </body>
+</html>
